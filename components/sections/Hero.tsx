@@ -118,7 +118,7 @@ export default function Hero() {
                 y: [0, 18, 0]
               }}
               transition={{
-                initial: { duration: 0.8 },
+                opacity: { duration: 0.8 },
                 scale: { duration: 3.5, repeat: Infinity, ease: "easeInOut" },
                 y: { duration: 3.5, repeat: Infinity, ease: "easeInOut" }
               }}
