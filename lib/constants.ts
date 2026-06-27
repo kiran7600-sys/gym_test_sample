@@ -60,7 +60,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Commercial-grade treadmills with cushioned decks, incline up to 15%, and speeds reaching 20 km/h. Built for endurance runners and HIIT enthusiasts.',
     muscles: 'Legs, Cardio',
-    image: '/images/equipment/treadmill.jpg',
+    image: '/images/treadmill.png',
   },
   {
     id: 2,
@@ -68,7 +68,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Complete rubber hex dumbbell range from 5kg to 100kg. Premium knurled handles for secure grip during heavy lifts.',
     muscles: 'Full Body',
-    image: '/images/equipment/dumbbells.jpg',
+    image: '/images/dumbbells.png',
   },
   {
     id: 3,
@@ -76,7 +76,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Heavy-duty power racks with safety bars, adjustable J-hooks, and pull-up stations. Rated for 500kg+ loads.',
     muscles: 'Quads, Glutes, Core',
-    image: '/images/equipment/squat-rack.jpg',
+    image: '/images/squat-rack.png',
   },
   {
     id: 4,
@@ -84,7 +84,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Olympic flat, incline, and decline benches with competition-standard width. Paired with calibrated barbells.',
     muscles: 'Chest, Shoulders, Triceps',
-    image: '/images/equipment/bench-press.jpg',
+    image: '/images/bench-press.png',
   },
   {
     id: 5,
@@ -92,7 +92,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Guided barbell system with counterbalanced weight for safe solo training. Linear bearings for smooth movement.',
     muscles: 'Full Body Compound',
-    image: '/images/equipment/smith-machine.jpg',
+    image: '/images/smith-machine.png',
   },
   {
     id: 6,
@@ -100,7 +100,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Dual adjustable pulley systems with 100kg weight stacks per side. 360-degree rotation for unlimited exercise variety.',
     muscles: 'Full Body Isolation',
-    image: '/images/equipment/cable-machine.jpg',
+    image: '/images/cable-machine.png',
   },
   {
     id: 7,
@@ -108,7 +108,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Plate-loaded 45-degree leg press with 1000kg capacity. Extra-wide foot platform for varied stance positions.',
     muscles: 'Quads, Hamstrings, Glutes',
-    image: '/images/equipment/leg-press.jpg',
+    image: '/images/leg-press.png',
   },
   {
     id: 8,
@@ -116,7 +116,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Dual cable columns with 1:1 and 2:1 pulley ratios. Perfect for sport-specific and rehabilitation training.',
     muscles: 'Full Body Functional',
-    image: '/images/equipment/functional-trainer.jpg',
+    image: '/images/functional-trainer.png',
   },
   {
     id: 9,
@@ -124,7 +124,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Air and magnetic resistance rowers with performance monitors. Low-impact full-body conditioning.',
     muscles: 'Back, Arms, Core, Legs',
-    image: '/images/equipment/rowing-machine.jpg',
+    image: '/images/rowing-machine.png',
   },
   {
     id: 10,
@@ -132,7 +132,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Upright and recumbent cycles with electromagnetic resistance. Heart rate monitoring and preset programs.',
     muscles: 'Legs, Cardio',
-    image: '/images/equipment/exercise-bikes.jpg',
+    image: '/images/exercise-bike.png',
   },
   {
     id: 11,
@@ -140,7 +140,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Competition-spec kettlebells from 4kg to 48kg. Color-coded by weight with uniform handle diameter.',
     muscles: 'Full Body Power',
-    image: '/images/equipment/kettlebells.jpg',
+    image: '/images/kettlebells.png',
   },
   {
     id: 12,
@@ -148,7 +148,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
     description:
       'Counterweight-assisted chin-up and dip station. Progressive resistance reduction for building upper body strength.',
     muscles: 'Back, Chest, Arms',
-    image: '/images/equipment/chin-dip.jpg',
+    image: '/images/chin-dip.png',
   },
 ];
 

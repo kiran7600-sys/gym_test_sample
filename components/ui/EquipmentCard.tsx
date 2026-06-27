@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image';
 import type { Equipment } from '@/types';
 
 interface EquipmentCardProps {
@@ -65,19 +66,41 @@ export default function EquipmentCard({ equipment, index, reversed }: EquipmentC
         </div>
       </div>
 
-      {/* Image Side */}
-      <div className="flex-1 w-full">
-        <div
-          className="w-full h-[300px] rounded-2xl overflow-hidden"
-          style={{
-            background: 'linear-gradient(135deg, #1a1a1a 0%, #121212 50%, #0a0a0a 100%)',
-          }}
-          role="img"
-          aria-label={`${equipment.name} equipment`}
-        >
-          <div className="w-full h-full flex items-center justify-center">
-            <span className="font-heading text-6xl text-white/5 uppercase select-none">
-              {equipment.name}
+      {/* Image Side with activity-specific animation */}
+      <div className="flex-1 w-full relative group/img">
+        {/* Red Glow on hover */}
+        <div className="absolute -inset-2 bg-red-500/15 blur-2xl rounded-2xl opacity-0 group-hover/img:opacity-100 transition-opacity duration-500" />
+
+        <div className="relative w-full h-[300px] rounded-2xl overflow-hidden border border-white/10 bg-black shadow-2xl">
+          {/* Animated image wrapper with subtle left/right motion */}
+          <motion.div
+            className="absolute inset-0 will-change-transform scale-110"
+            animate={{
+              x: reversed ? [-15, 15, -15] : [15, -15, 15],
+            }}
+            transition={{
+              duration: 6,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
+          >
+            <Image
+              src={equipment.image}
+              alt={`${equipment.name} workout demonstration`}
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-center"
+              loading={index < 2 ? 'eager' : 'lazy'}
+            />
+          </motion.div>
+
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent pointer-events-none z-10" />
+
+          {/* Equipment name watermark */}
+          <div className="absolute bottom-4 left-4 z-20">
+            <span className="font-heading text-xs tracking-[0.25em] text-white/40 uppercase">
+              {equipment.muscles}
             </span>
           </div>
         </div>

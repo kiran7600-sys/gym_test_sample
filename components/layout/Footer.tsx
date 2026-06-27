@@ -157,12 +157,12 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-gray-500 text-xs sm:text-sm">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col items-center justify-center gap-2">
+          <p className="text-gray-500 text-xs sm:text-sm text-center">
             &copy; 2024 IRONFORGE. All rights reserved.
           </p>
-          <p className="text-gray-500 text-xs sm:text-sm">
-            Made by <a href="https://kiranugale.com" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 transition-colors">kiranuagle</a>
+          <p className="text-gray-500 text-xs sm:text-sm text-center">
+            Developed by <a href="https://kiranugale.com" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 transition-colors">Kiran Ugale</a>
           </p>
         </div>
       </div>
